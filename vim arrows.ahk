@@ -14,6 +14,8 @@ return
 Send {up}
 return
 
+; //////////////////////
+
 #+h::
 Send {shift down}{left}
 return
@@ -28,6 +30,42 @@ return
 
 #+k::
 Send {shift down}{up}
+return
+
+; //////////////////////
+
+^#h::
+Send {control down}{left}
+return
+
+^#l::
+Send {control down}{right}
+return
+
+^#j:: 
+Send {control down}{down}
+return
+
+^#k::
+Send {control down}{up}
+return
+
+; //////////////////////////
+
+^+#h::
+Send {shift down}{control down}{left}
+return
+
+^+#l::
+Send {shift down}{control down}{right}
+return
+
+^+#j:: 
+Send {shift down}{control down}{down}
+return
+
+^+#k::
+Send {shift down}{control down}{up}
 return
 
 /*RegWrite, REG_DWORD, HKEY_CURRENT_USER, Software\Microsoft\Windows\CurrentVersion\Policies\System, DisableLockWorkstation, 0
