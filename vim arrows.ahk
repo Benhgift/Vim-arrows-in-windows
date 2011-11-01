@@ -14,7 +14,23 @@ return
 Send {up}
 return
 
-; //////////////////////
+;////////////////basic VIM movement
+
+#space::
+Loop,6
+{
+     Send {down}
+} 
+return
+
+#+space::
+Loop,6
+{
+     Send {up}
+} 
+return
+
+; //////////////////////move up or down 6 times
 
 #+h::
 Send {shift down}{left}
@@ -32,7 +48,7 @@ return
 Send {shift down}{up}
 return
 
-; //////////////////////
+; ////////////////////// highlight words
 
 ^#h::
 Send {control down}{left}
@@ -50,7 +66,7 @@ return
 Send {control down}{up}
 return
 
-; //////////////////////////
+; //////////////////////////move quickly by skipping words
 
 ^+#h::
 Send {shift down}{control down}{left}
@@ -68,9 +84,12 @@ return
 Send {shift down}{control down}{up}
 return
 
+;////////////////////////highlight quickly by skipping words
+
 /*RegWrite, REG_DWORD, HKEY_CURRENT_USER, Software\Microsoft\Windows\CurrentVersion\Policies\System, DisableLockWorkstation, 0
 
 RegWrite, REG_DWORD, HKEY_CURRENT_USER, Software\Microsoft\Windows\CurrentVersion\Policies\System, DisableLockWorkstation, 1
 
-^^^ Put those scripts into a blank .atk file, one at a time, to enable and disable the win + L == lockscreen effect, respectively
+///////////////////////// Put those scripts into a blank .atk file,
+one at a time, to enable and disable the win + L == lockscreen effect, respectively
 */
