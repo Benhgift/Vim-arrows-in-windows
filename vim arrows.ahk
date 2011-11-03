@@ -1,17 +1,25 @@
+#Persistent
+#SingleInstance, Force
+SetKeyDelay, -1
+CoordMode, Tooltip, Screen
+
+$#::
+return
+
 #h::
-Send {left}
+Send {left down}
 return
 
 #l::
-Send {right}
+Send {right down}
 return
 
 #j::
-Send {down}
+Send {down down}
 return
 
 #k::
-Send {up}
+Send {up down}
 return
 
 ;////////////////basic VIM movement
