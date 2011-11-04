@@ -11,6 +11,8 @@ All credit for the rest of the script goes to "Unambiguous" at http://www.autoho
 
 All vim controls work as you'd expect while holding the caps lock key. 
 
+Added google search with Caps + g (creit goes entirely to NakariaSan at http://www.autohotkey.com/forum/topic14656.html)
+
 -----------------------------------------------------Below is 100% my script.
 
 Vim arrows in windows:
